@@ -10,10 +10,6 @@ pipeline {
                 }
             }
         }
-        stage('Health check') {
-            steps {
-                sh 'curl --silent --fail "http://tamas-udacity-project-jenkins.s3-website.us-east-1.amazonaws.com" >/dev/null'
-            }
-        }
+       
     }
 }
